@@ -34,6 +34,11 @@ img {display: block;}
 
 /*Header*/
 
+.page-header-container{
+    display: flex;
+    justify-content: space-between;
+}
+
 .mobile-menu-open-btn-icon{
     stroke-width: 3px;
     stroke-linecap: round;
