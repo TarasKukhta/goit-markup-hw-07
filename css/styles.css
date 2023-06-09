@@ -43,12 +43,43 @@ body {
 .button {cursor: pointer;}
 
 
-/* Стилі загальні */
+/* СТИЛІ ЗАГАЛЬНІ */
 .container{
     margin-left: auto;
     margin-right: auto;
     
 }
+/*Social-icon*/
+.social-list-link-team:hover,
+.social-list-link-team:focus {
+    background-color: #404BBF;
+}
+
+.social-list-item {
+    width: 40px;
+    height: 40px;
+}
+
+.social-list-team {
+    margin-top: 8px;
+}
+
+.social-list-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #4D5AE5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.list-our-team{
+    padding-bottom: 96px;
+}
+.icons-social {fill: #F4F4FD;}
+
 /*Header*/
 
 .page-header-container{
@@ -92,28 +123,175 @@ body {
 .button-hero:focus {
     background-color: #404BBF;
 }
+ /*Our-Team*/
+
+.text-main-team{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    margin-bottom: 72px;
+    color: var(--previous-color-text);}
+
+    .team-list-item {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--main-background-color);}
 
 
+    .main-team {background: #F4F4FD;}
+
+    .text-main-team {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    margin-bottom: 72px;
+    color: var(--previous-color-text);
+    }
+
+    .text-main-our-team{
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+    }
+
+    .text-minor-our-team{
+    margin-top: 8px;
+    font-family: 'Roboto' , sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #434455;
+    }
+
+    /*Customers Клієнти*/
+
+    .customers-main{
+        display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Roboto' , sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 1.1;
+            margin-bottom: 72px;
+            color: var(--previous-color-text);
+    }
+        .customers-list {display: flex;}
+
+    .customers-item{height: 88px;}
+
+        .customers-id {
+            display: block;
+            border: 1px solid rgb(142, 143, 153);
+            border-radius: 4px;
+            color: rgb(142, 143, 153);
+            height: 100%;
+            width: 100%;
+            transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .customers-bt{
+            display: flex;
+            align-items: center;
+        }
+
+    
 /* Стилі мобілка */
+
 @media screen and (max-width: 767px) {
     /*загальні*/
-    .container {
-    max-width: 428px;
-     }
+    .container {max-width: 428px;}
     /*header*/
-    .menu {display: none;}
+    .menu {display: none;} 
+
     .header-contact-list {display: none;}
-.mobile-text-hero{
+
+        /*Hero*/
+    .mobile-text-hero{
+        padding-top: 112px;
     font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 56px;
-        line-height: 60px;
-        text-align: center;
-        letter-spacing: 0.02em;
-        color: #FFFFFF;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;}
+
+    .mobile-hero{height: 432px; background: rgba(46, 47, 66, 0.7);}
+    .button-hero{margin-top: 72px; }
+
+        /*Our-Direction*/
+    .our-direction{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 72px;
+    margin-top: 96px;
+    margin-bottom: 96px;}
+
+        /*Our-Team*/
+        .team-list-item{
+            display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 0px 0px 32px;
+                gap: 32px;
+}
+    .list-our-team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 72px;
+}
+    .team-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+}
+.social-list{
+    display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 24px;
 }
 
+/*Customers Клієнти*/
+
+.customers-list{
+    display: flex;
+    column-gap: 16px;
+    
+}
+.customers-item{
+    width: calc((100% - 16px) / 2);
+    
+}
 
 
 }
@@ -122,14 +300,52 @@ body {
 @media screen and (max-width: 1157px) {
     .container {
      padding-left: 16px;
-    padding-right: 16px;
-        
+    padding-right: 16px;}
+
+    .icon-item{display: none;}
+
+    .section-our-works{display: none;}
+
+    .text-main-our-way{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #2E2F42;}
+
+    .text-minor-our-way {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;}
+
+    .text-main-team{
+        padding-top: 96px;
+
     }
-}
-/* Стилі decktop */
+
+        /*Customers Клієнти*/
+    .customers{
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+        /*Customers Клієнти*/
+    
+        .customers-list {
+            display: flex;
+            row-gap: 72px;
+            flex-wrap: wrap;
+            }
+        }
+/* Стилі desktop*/
 @media screen and (min-width:1158px) {
     .container{
-        
+
     }
     .text-hero {
     font-weight: 700;
@@ -143,6 +359,16 @@ body {
     max-width: 496px;
     margin-bottom: 48px;
     color: var(--third-color-text);}
+
+     /*Our-Team*/
+    .section-our-team {
+    padding-bottom: 120px;
+    padding-top: 120px;}
+
+        .list-our-team {
+        display: flex;
+        gap: 24px;
+        align-items: center;}
 }
 
 
@@ -239,6 +465,3 @@ font-family: 'Roboto';
 
 }
 
-.icon-item{
-    display: none;
-}
