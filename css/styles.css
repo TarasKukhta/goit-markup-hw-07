@@ -108,6 +108,19 @@ body {
 
 .logo-st { color: #2E2F42;}
 
+
+/*Контакти*/
+
+.contact-link {font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--secondary-color-text);
+transition: color var(--transition-duration-and-func);}
+
+.contact-link:hover,
+.contact-link:focus{color: var(--menu-contact-link-color);}
+
+/*Кнопка Героя*/
 .button-hero {
     display: block;
     min-width: 169px;
@@ -128,8 +141,10 @@ body {
 
 .button-hero:hover,
 .button-hero:focus {
-    background-color: #404BBF;
-}
+    background-color: #404BBF;}
+
+
+    
  /*Our-Team*/
 
 .text-main-team{
@@ -270,7 +285,7 @@ body {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    color: var(--button-subscribe-color);
+    color: var(--button-social-list-teamribe-color);
     background-color: var(--button-subscribe-color-background);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
@@ -491,14 +506,13 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
     border: none;
     background-color: transparent;
     padding: 0;
-    line-height: 0;    }
-    
+    line-height: 0;}
 
     .mobile-menu-open-btn-icon {
     stroke-width: 3px;
     stroke-linecap: round;
     stroke-linejoin: round;
-    stroke: black;        }
+    stroke: black;}
     
     .mobile-menu {
     position: fixed;
@@ -557,10 +571,29 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
     line-height: 40px;
     letter-spacing: 0.02em;
     color: #2E2F42;}
-    
-    .mobile-contact-list {display: flex;}
 
-        /*Our-Direction*/
+    .mobile-menu-contact-list{ 
+    display: flex;
+    flex-direction: column;}
+
+    .mobile-contact-link{
+        
+    }
+
+    .mobile-menu-social-list{
+    gap: 56px;
+    padding-top: 48px;
+        }
+
+    .social-list-team{
+    margin-top: 0px;
+        }
+
+    .mobile-contact-list {
+    display: flex;
+    flex-direction: column;}
+
+    /*Our-Direction*/
     .our-direction{
     display: flex;
     flex-direction: column;
@@ -740,8 +773,12 @@ margin-top: 16px;}
     clip-path: inset(50%);
     margin: -1px;}
 
-}
+    .contact-link{
+       padding: 24px 0;
+margin-left: auto; 
+    }
 
+}
 
 
 /* Стилі планшет */
