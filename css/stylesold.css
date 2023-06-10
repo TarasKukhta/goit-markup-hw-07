@@ -842,9 +842,7 @@ justify-content: center;
     line-height: 1.17;
     letter-spacing: 0.04em;
     margin-bottom: 4px;
-    color:var(--color-lable-modal);
-
-}
+    color:var(--color-lable-modal);}
 
 .contact-form-checkbox{
     appearance: none;
