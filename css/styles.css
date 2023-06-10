@@ -84,8 +84,6 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 0px;
-    gap: 24px;
 }
 
 /*Header*/
@@ -94,6 +92,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .logo {
@@ -199,6 +198,10 @@ transition: color var(--transition-duration-and-func);}
     text-align: center;
     letter-spacing: 0.02em;
     color: #434455;
+    }
+
+    .social-list-team{
+        gap: 24px;
     }
 
     /*Customers Клієнти*/
@@ -467,7 +470,13 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
 .contact-form-btn-wrapper{
     display: flex;
-    justify-content: center;}    
+    justify-content: center;}  
+    
+    
+/* Футер */
+
+    .footer-socials{
+        gap: 16px;    }
 
 
 
@@ -483,6 +492,17 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
     .menu {display: none;} 
 
     .header-contact-list {display: none;}
+
+    .page-header-container{
+        width: 428px;
+            height: 70px;
+    }
+
+    .page-header{
+        padding-top: 25.43px;
+            padding-bottom: 25.96px;
+    }
+
 
     /*Hero*/
     .mobile-text-hero{
@@ -532,9 +552,15 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
     pointer-events: auto;}
 
     .mobile-menu-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     position: relative;
-    padding-top: 80px;
-    padding-left: 24px;}
+    max-width: 428px;
+    margin-left: auto;
+    margin-right: auto;
+    padding:80px 35px 40px 40px;
+height: 100%;}
 
     .menu-mobile-close-icon {
     fill: currentColor;
@@ -552,8 +578,7 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
     padding: 0;
     border-radius: 50%;
     background: #E7E9FC;
-    opacity: 0.1;
-    border: 1px solid #2E2F42;}
+    border: 1px solid rgba(0, 0, 0, 0.1);}
 
 
     .mobile-menu-list {
@@ -576,22 +601,37 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
     display: flex;
     flex-direction: column;}
 
-    .mobile-contact-link{
-        
+    .mobile-contact-tel{
+        font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 40px;
+            letter-spacing: 0.02em;
+            text-transform: capitalize;
+            color: #4D5AE5;
+
     }
+.mobile-contact-email{
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        color: #434455;
+
+}
 
     .mobile-menu-social-list{
-    gap: 56px;
-    padding-top: 48px;
-        }
+        justify-content: space-between;
+    margin-top: 48px;}
 
-    .social-list-team{
-    margin-top: 0px;
-        }
 
     .mobile-contact-list {
     display: flex;
-    flex-direction: column;}
+    flex-direction: column;
+gap: 40px;}
 
     /*Our-Direction*/
     .our-direction{
@@ -663,6 +703,10 @@ flex-direction: column;
     margin-right: auto;
 margin-top: 16px;}
 
+.modal-window{
+    max-width: 392px;
+    max-height: 584px;
+}
 
 
 }
@@ -757,9 +801,9 @@ margin-top: 16px;}
     display: flex;
     gap: 24px;
     align-items: center;}
+
     .page-header {
-    padding-top: 24px;
-    padding-bottom: 22px;}
+  }
 
 .visually-hidden {
     position: absolute;
@@ -783,16 +827,16 @@ margin-left: auto;
 
 /* Стилі планшет */
 
-@media screen and (min width: 768px) and (max-width: 1157px) {
+@media screen and (min-width: 768px) and (max-width: 1157px) {
     .container {
 
     }
-
+    
 }
 
 /* Стилі планшет+десктоп */
 
-@media screen and (min width: 768px) {
+@media screen and (min-width: 768px) {
     .container {
  }
 
@@ -801,11 +845,29 @@ margin-left: auto;
  .contact-form-footer-input {
     width: 264px;
     height: 40px;}
+
+        .mobile-menu-open-btn {
+            display: none;}
+
+ .mobile-menu{
+    display:none;}
+
+.menu {
+    display: flex;
+    gap: 40px;
+}
+
+
+
+
+ }           
+
+
     
 
 
 
-}
+
 
 
 
