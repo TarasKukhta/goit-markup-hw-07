@@ -664,7 +664,6 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
 }
 
 .contact-privacy {
-    display: block;
     color: rgba(77, 90, 229, 1);
 }
 
@@ -1137,6 +1136,13 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
 .hero {
     max-width: 768px;
 }
+
+/*Button Hero*/
+
+.button-hero{
+    margin-top: 36px;
+}
+
 /*Our direction*/
 
 
@@ -1250,7 +1256,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
 
         .contact-link {
             font-style: normal;
-            font-size: 16px;
+            font-size: 12px;
             line-height: 1.5;
             letter-spacing: 0.02em;
             color: var(--secondary-color-text);
