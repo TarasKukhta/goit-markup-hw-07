@@ -1342,6 +1342,7 @@ screen and (min-resolution: 2dppx) and (min-width: 1158px) {
         align-items:  center;
         background-color: var(--button-color-bg);
         margin-bottom: 8px;
+        height: 112px;
     }
 
     /*What are we doing*/
