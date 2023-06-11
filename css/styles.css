@@ -155,6 +155,9 @@ body {
     margin-right: auto;
         margin-left: auto;
      background: rgba(46, 47, 66, 0.7);
+    background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
  }
 
 
@@ -165,7 +168,7 @@ body {
      .hero {
          background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                  rgba(46, 47, 66, 0.7)),
-             url('../images/hero-mobile-428x432-1px.jpg');
+             url('./images/hero-mobile-428x432-1px.jpg');
      }
  }
 
